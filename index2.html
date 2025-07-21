@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz de Games - JUSON</title>
+
+  <style>
+    @font-face {
+      font-family: 'Minecraft';
+      src: url('minecraft.ttf') format('truetype');
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Minecraft', monospace;
+      background-color: white;
+    }
+
+    #main {
+      width: 100%;
+      height: 80px;
+      background-color: #d3d3d3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    #main input[type="image"] {
+      position: absolute;
+      left: 20px;
+      top: 18px;
+      width: 3.5%;
+      height: 45px;
+    }
+
+    #quiz {
+      margin: 30px 15%;
+      font-size: 18px;
+    }
+
+    .campo {
+      margin-bottom: 25px;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-family: 'Minecraft', monospace;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #d3d3d3;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: 'Minecraft', monospace;
+      cursor: pointer;
+    }
+
+    #pe{
+      width: 100%;
+      height: 20%;
+      float: left;
+      background-color: #d3d3d3;
+      color: black;
+      text-align: left;
+      padding-left: 20px;
+      box-sizing: border-box;
+      overflow: hidden;
+      font-family: 'Minecraft', monospace;
+
+      }
+      #pe img{
+        height:auto ;
+        width:15%;
+        float:right;
+        margin: -4% 9% -10% 3%;
+
+      }
+    img:not(#pe img){
+      display: block;
+      margin: 20px auto;
+      width: 40%;
+      height: auto;
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div id="main">
+    <input type="image" src="https://i.postimg.cc/GhGp1XZJ/CASA-PRETA-JUSON.png"
+           onclick="voltar()" title="Voltar ao menu">
+    <img style="width: auto; height: 8vh;" src="https://i.postimg.cc/FFnDyR6B/JUSON-PRETO.png">
+  </div>
+
+  <form id="quiz" action="#" method="post">
+    <h2>Quiz: História dos Videogames</h2>
+
+    <div class="campo">
+      <label for="nome">Nome do participante:</label><br>
+      <input type="text" id="nome" name="nome" required>
+    </div>
+
+    <div class="campo">
+      <label for="q1">1) Qual foi o primeiro console de videogame doméstico?</label><br>
+      <select id="q1" name="q1" required>
+        <option value="">--Selecione--</option>
+        <option value="atari">Atari 2600</option>
+        <option value="nes">NES</option>
+        <option value="odyssey">Magnavox Odyssey</option>
+      </select>
+    </div>
+
+    <div class="campo">
+      <label for="q2">2) Qual empresa lançou o console PlayStation?</label><br>
+      <select id="q2" name="q2" required>
+        <option value="">--Selecione--</option>
+        <option value="nintendo">Nintendo</option>
+        <option value="sony">Sony</option>
+        <option value="sega">Sega</option>
+      </select>
+    </div>
+
+    <div class="campo">
+      <label for="q3">3) Em que ano o Xbox foi lançado?</label><br>
+      <select id="q3" name="q3" required>
+        <option value="">--Selecione--</option>
+        <option value="2001">2001</option>
+        <option value="1994">1994</option>
+        <option value="2013">2013</option>
+      </select>
+    </div>
+
+    <div class="campo">
+      <label for="q4">4) Qual console introduziu o uso de CDs nos games?</label><br>
+      <select id="q4" name="q4" required>
+        <option value="">--Selecione--</option>
+        <option value="snes">Super Nintendo</option>
+        <option value="playstation">PlayStation</option>
+        <option value="sega-saturn">Sega Saturn</option>
+      </select>
+    </div>
+
+    <div class="campo">
+      <label for="q5">5) Na sua opinião, qual console marcou a sua geração?</label><br>
+      <textarea id="q5" name="q5" rows="4" placeholder="Escreva sua resposta aqui..."></textarea>
+    </div>
+
+    <input type="submit" value="Enviar Respostas" onclick="enviar()">
+  </form>
+
+  <div id="pe">
+    <p style="margin: 1% 0%;">© Projeto JUSON 2025.</p>
+    <hr width="98%">
+    <p style="margin: 1% 0%;">
+      Este site foi desenvolvido com fins educacionais. As marcas, nomes e imagens<br>
+      exibidos pertencem exclusivamente aos seus respectivos proprietários.
+    </p>
+    <p style="margin: 1% 0%;">
+      Desenvolvido por: <strong>Anderson Ribeiro da Silva</strong> e <strong>Juscelino Emanoel Nunes Galvão</strong>.
+    </p>
+    <p style="margin: 1% 0%;">
+      Contato: <a href="https://mail.google.com/mail/?view=cm&to=projetojuson@gmail.com" style="color: black; text-decoration: underline;">projetojuson@gmail.com</a>
+      <img src="https://i.postimg.cc/FFnDyR6B/JUSON-PRETO.png">
+    </p>
+  </div>
+
+  <script>
+    function voltar() {
+      window.location.href = "index.html";
+    }
+    function enviar(){
+      window.alert("Quiz finalizado!");
+       event.preventDefault();
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Xbox - JUSON</title>
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+    @font-face {
+      font-family: 'Minecraft';
+      src: url('minecraft.ttf') format('truetype');
+    }
+
+    .minecraft-font {
+      font-family: 'Minecraft', monospace;
+    }
+    #main{
+      width: 100%;
+      height: 80px;
+      float: center;
+      background-color: #228B22;
+      display: flex;
+      justify-content: center; 
+      align-items: center;    
+      gap: 20px;
+       }
+    #texto{
+      text-align: left;
+      margin-left: 20%;
+      margin-right: 20%;
+      font-size: 20px;
+      font-family: 'Minecraft', monospace;
+    }
+
+    #pe{
+      width: 100%;
+      height: 20%;
+      margin-top: 2%;
+      float: left;
+      background-color: #228B22;
+      color: white;
+      text-align: left;
+      padding-left: 20px;
+      box-sizing: border-box;
+      overflow: hidden;
+      font-family: 'Minecraft', monospace;
+
+      }
+    #pe img{
+      height:auto ;
+      width:15%;
+      float:right;
+      margin: -4% 9% -10% 3%;
+      }
+    img:not(#imgs img):not(#tab img):not(#pe img) {
+      display: block;
+      margin: 20px auto;
+      width: 40%;
+      height: auto;
+    }
+    #imgs{
+      justify-content: center;
+      gap: 10px;
+      display: flex;
+      }
+    #imgs img{
+      height:250px ;
+      width:auto;
+      }
+    
+    #tab{
+      height:70% ;
+      width:70%;
+      margin:2% 0% 2% 0%;
+      font-family: 'Minecraft', monospace;
+      }
+    
+    #tab img {
+      width: 200px;
+      height: auto;
+      object-fit: contain;
+      display: inline;
+      margin: 0;
+    }
+    th{
+      background-color: #228B22;
+      color: white;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div id="main">
+
+    <input style="width: 3.5%;height: auto ;position: absolute;  left: 20px; top: 18px; height: 45px;" type="image" src="https://i.postimg.cc/qqK888gc/CASA-JUSON.png" onclick="voltar()" value="start" title="menu">
+
+    <img style="height: 8vh; width: auto;" src="https://i.postimg.cc/HnjvKQg8/XBOX-LOGO-JUSON-removebg-preview.png">
+  </div>
+
+  <div id="texto">
+    <center><h3>A História da Xbox</h3></center>
+     A história do Xbox começou em 2001 com o lançamento do primeiro console da Microsoft. O <b>Xbox</b> original trouxe inovações como o disco rígido interno e destacou-se com Halo: Combat Evolved, que se tornou uma das franquias mais importantes dos games.
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Xbox-Console-Set.png/960px-Xbox-Console-Set.png">
+
+     Em 2005, veio o <b>Xbox 360</b>, que consolidou a marca no mercado com o Xbox Live e uma forte biblioteca de jogos. Títulos como Gears of War, Halo 3, Mass Effect e Forza Motorsport fizeram grande sucesso, apesar do problema técnico conhecido como "Red Ring of Death".
+
+    <img src="https://i.zst.com.br/thumbs/12/2b/12/2112568.jpg">
+
+    O <b>Xbox One</b> foi lançado em 2013 com foco em entretenimento além dos jogos, mas enfrentou críticas iniciais. Ao longo dos anos, se recuperou com o lançamento do Game Pass e jogos como Halo 5, Forza Horizon 4 e *ea of Thieves.
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Microsoft-Xbox-One-Console-Set-wKinect.jpg">
+
+    Em 2020, chegaram os <b>Xbox Series X e Series S</b>, representando a nova geração com foco em desempenho e acessibilidade. O destaque foi a expansão do Game Pass e títulos como Halo Infinite, Forza Horizon 5 e Starfield.
+
+  </div>
+
+   <div id="imgs">
+
+    <img src="https://cms-assets.xboxservices.com/assets/bc/40/bc40fdf3-85a6-4c36-af92-dca2d36fc7e5.png?n=642227_Hero-Gallery-0_A1_857x676.png"> <img src="https://http2.mlstatic.com/D_NQ_NP_621491-MLA48680897402_122021-O.webp">
+
+  </div>
+  
+  <hr width="72%">
+  
+  <center>
+    <div id="tab">
+      <table border="1">
+        <tr>
+          <th>NOME</th>
+          <th>IMAGEM</th>
+          <th>ANO</th>
+          <th>INOVAÇÕES</th>
+          <th>VERSÕES</th>
+          <th>JOGOS PRINCIPAIS</th>
+        </tr>
+
+        <tr>
+          <td>XBOX</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Xbox-Console-Set.png/960px-Xbox-Console-Set.png"></td>
+          <td>2001 - 2009</td>
+          <td>Xbox Live, HD interno, suporte a HD.</td>
+          <td>Original</td>
+          <td>Halo, Fable, Ninja Gaiden</td>
+        </tr>
+
+        <tr>
+          <td>XBOX 360</td>
+          <td><img src="https://i.zst.com.br/thumbs/12/2b/12/2112568.jpg"></td>
+          <td>2005 - 2016</td>
+          <td>Jogos digitais, conquistas, Kinect.</td>
+          <td>Core, Arcade, Elite, Slim, E</td>
+          <td>Halo 3, Gears 2, Red Dead</td>
+        </tr>
+
+        <tr>
+          <td>XBOX ONE</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Microsoft-Xbox-One-Console-Set-wKinect.jpg"></td>
+          <td>2013 – 2020</td>
+          <td>Windows 10, mídia digital, retrocompatível.</td>
+          <td>One, One S, One X</td>
+          <td>Halo 5, Forza 4, Sunset O.</td>
+        </tr>
+
+        <tr>
+          <td>SERIES X</td>
+          <td><img src="https://cms-assets.xboxservices.com/assets/bc/40/bc40fdf3-85a6-4c36-af92-dca2d36fc7e5.png?n=642227_Hero-Gallery-0_A1_857x676.png"></td>
+          <td>2020 – presente</td>
+          <td>4K, SSD rápido, retrocompatível.</td>
+          <td>Series X</td>
+          <td>Starfield, Halo I., Forza 2023</td>
+        </tr>
+
+        <tr>
+          <td>SERIES S</td>
+          <td><img src="https://http2.mlstatic.com/D_NQ_NP_621491-MLA48680897402_122021-O.webp"></td>
+          <td>2020 – presente</td>
+          <td>Sem disco, foco 1440p, mais barata.</td>
+          <td>512GB, 1TB</td>
+          <td>Hi-Fi Rush, Flight Sim., Sea of T.</td>
+        </tr>
+
+      </table>
+    </div>
+  </center>
+
+
+  <div id="pe">
+    <p style="margin: 1% 0%;">© Projeto JUSON 2025.</p>
+    <hr width="98%">
+    <p style="margin: 1% 0%;">
+      Este site foi desenvolvido com fins educacionais. As marcas, nomes e imagens<br>
+      exibidos pertencem exclusivamente aos seus respectivos proprietários.
+    </p>
+    <p style="margin: 1% 0%;">
+      Desenvolvido por: <strong>Anderson Ribeiro da Silva</strong> e <strong>Juscelino Emanoel Nunes Galvão</strong>.
+    </p>
+    <p style="margin: 1% 0%;">
+      Contato: <a href="https://mail.google.com/mail/?view=cm&to=projetojuson@gmail.com" style="color: white; text-decoration: underline;">projetojuson@gmail.com</a>
+       <img src="https://i.postimg.cc/nhX2Styh/JUSON-BRANCO.png">
+    </p>
+  </div>
+
+  <script>
+    function voltar() {
+      window.location.href="index.html";
+    }
+  </script>
+
+</body>
+
+</html>

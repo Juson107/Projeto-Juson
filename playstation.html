@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>PlayStation - JUSON</title>
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+    @font-face {
+      font-family: 'Minecraft';
+      src: url('minecraft.ttf') format('truetype');
+    }
+
+    .minecraft-font {
+      font-family: 'Minecraft', monospace;
+    }
+    #main{
+      width: 100%;
+      height: 80px;
+      background-color: #003791;
+      display: flex;
+      justify-content: center; 
+      align-items: center;    
+      gap: 20px;
+       }
+    #texto{
+      text-align: left;
+      margin-left: 20%;
+      margin-right: 20%;
+      font-size: 20px;
+      font-family: 'Minecraft', monospace;
+    }
+
+    #pe{
+      width: 100%;
+      height: 20%;
+      float: left;
+      background-color: #003791;
+      color: white;
+      text-align: left;
+      padding-left: 20px;
+      box-sizing: border-box;
+      overflow: hidden;
+      font-family: 'Minecraft', monospace;
+    
+    }
+    #pe img{
+      height:auto ;
+      width:15%;
+      float:right;
+      margin: -6% 9% -10% 3%;
+      
+    }
+    img:not(#imgs img):not(#tab img):not(#pe img) {
+      display: block;
+      margin: 20px auto;
+      width: 40%;
+      height: auto;
+
+    }
+    #imgs{
+      justify-content: center;
+      gap: 10px;
+      display: flex;
+    }
+    #imgs img{
+      height:180px ;
+      width:auto
+    }
+    #tab{
+      height:70% ;
+      width:70%;
+      margin:2% 0% 2% 0% ;
+      font-family: 'Minecraft', monospace;
+      }
+    #tab img {
+      width: 200px;
+      height: auto;
+      object-fit: contain;
+      display: inline;
+      margin: 0;
+    }
+
+    th{
+      background-color: #003791;
+      color: white;
+    }
+    
+  </style>
+
+</head>
+
+<body>
+
+  <div id="main">
+      <input style="width: 3.5%;height: auto ;position: absolute;  left: 20px; top: 18px; height: 45px;" type="image" src="https://i.postimg.cc/qqK888gc/CASA-JUSON.png" onclick="voltar()" value="start" title="menu">
+      <img style="height: 8vh; width: auto;" src="https://i.postimg.cc/5NtrGW3Q/PLAYSTATION-LOGO-JUSON-removebg-preview.png">
+  </div>
+
+  <div id="texto">
+    <center><h3>A História da PlayStation</h3></center>
+    A história da PlayStation começou nos anos 90, quando a Sony tentou uma parceria com a Nintendo para criar um console com suporte a CD-ROM. Após o cancelamento do projeto, a Sony decidiu lançar seu próprio console: o <b>PlayStation</b>, que chegou ao Japão em 1994 e ao restante do mundo em 1995. Com jogos em CD e gráficos 3D, vendeu mais de 100 milhões de unidades e marcou uma nova era nos videogames.
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/PSX-Console-wController.png">
+
+    Em 2000, a Sony lançou o <b>PlayStation 2</b> , que se tornou o console mais vendido da história, com mais de 155 milhões de unidades. Com leitor de DVD e retrocompatibilidade com jogos do PS1, foi o lar de grandes sucessos como GTA: San Andreas e God of War.
+
+    <img src="https://m.media-amazon.com/images/I/61qkCrqsaYL.jpg">
+
+    O <b>PlayStation 3</b>, lançado em 2006, teve início difícil por seu alto custo e arquitetura complexa. No entanto, recuperou-se com títulos como The Last of Us e Uncharted, além de introduzir suporte a Blu-ray e à PlayStation Network.
+
+    <img src="//upload.wikimedia.org/wikipedia/commons/d/d3/Sony-PlayStation-3-2001A-wController-L.jpg">
+
+    Em 2013, o <b>PlayStation 4</b> trouxe uma abordagem mais acessível e voltada para os jogadores, com sistema amigável e exclusivos como Horizon Zero Dawn e Spider-Man. Vendeu mais de 117 milhões de unidades.
+
+<img src="https://meups.com.br/wp-content/uploads/2021/05/PlayStation-4.jpg.webp">
+    
+    O <b>PlayStation 5</b> foi lançado em 2020, com SSD ultrarrápido, gráficos avançados e o controle DualSense. Apesar da escassez inicial, foi muito procurado, com jogos como God of War Ragnarök e Final Fantasy XVI.
+
+<img src="https://static.comprexavan.com.br/produto/XJP4XpOi9ZFmFaa08f2s0RMa5iHjTLCBOv0xQ8Bi.png">
+
+    Nos portáteis, a Sony lançou o <b>PSP</b> em 2004, que teve boas vendas, e o <b>PS Vita</b> em 2011, elogiado pelo hardware, mas com menor sucesso comercial. Ao longo de três décadas, a marca PlayStation se consolidou como uma das maiores potências da indústria dos videogames.
+  </div>
+
+   <div id="imgs">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Psp-1000.jpg/1200px-Psp-1000.jpg"> <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/PlayStation-Vita-1101-FL.png">
+  </div>
+
+  <hr width="70%px">
+  
+  <center>
+    <div id="tab">
+      <table border="1">
+        <tr>
+          <th>NOME</th>
+          <th>IMAGEM</th>
+          <th>ANO</th>
+          <th>INOVAÇÕES</th>
+          <th>VERSÕES</th>
+          <th>JOGOS PRINCIPAIS</th>
+        </tr>
+        <tr>
+          <td>PlayStation 1</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/PSX-Console-wController.png"</td>
+          <td>1994 - 2006 </td>
+          <td>Popularizou os gráficos 3D em consoles domésticos, utilizando CD-ROM para jogos e introduzindo um controle com botões direcionais e analógicos, além da função de vibração.</td>
+          <td>PlayStation (original), PS One</td>
+          <td>Final Fantasy VII, Gran Turismo e Tekken 3</td>
+        </tr>
+        
+        <tr>
+          <td>PlayStation 2</td>
+          <td><img src="https://m.media-amazon.com/images/I/61qkCrqsaYL.jpg"</td>
+          <td> 2000 - 2013 </td>
+          <td>Compatibilidade com PS1, reprodução de DVDs, maior biblioteca de jogos da história.</td>
+          <td>PS2 original (Fat), PSX, PS2 Slim</td>
+          <td>GTA: San Andreas, God of War II, Shadow of the Colossus</td>
+        </tr>
+
+        <tr>
+          <td>PlayStation Portable</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Psp-1000.jpg/1200px-Psp-1000.jpg"</td>
+          <td> 2004 – 2014 </td>
+          <td>Portátil com gráficos 3D, conectividade Wi-Fi, reprodução de filmes em UMD, integração com PS3</td>
+          <td>PSP-1000, 2000, 3000, PSP Go, PSP Street</td>
+          <td>God of War: Chains of Olympus, Crisis Core: FF VII, Monster Hunter Freedom Unite</td>
+        </tr>
+
+        <tr>
+          <td>PlayStation 3</td>
+          <td><img src="//upload.wikimedia.org/wikipedia/commons/d/d3/Sony-PlayStation-3-2001A-wController-L.jpg"</td>
+          <td> 2006 – 2017 </td>
+          <td>Blu-ray, gráficos em HD, PSN, suporte a 3D estereoscópico, início da PS Plus, compatibilidade parcial com jogos de PS2 (em modelos iniciais)</td>
+          <td>PS3 Fat (20GB, 60GB, 80GB), PS3 Slim, PS3 Super Slim</td>
+          <td>The Last of Us, Uncharted 2, Metal Gear Solid 4</td>
+        </tr>
+
+        <tr>
+          <td>PlayStation Vita</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/PlayStation-Vita-1101-FL.png"</td>
+          <td> 2011 – 2019 </td>
+          <td>Tela OLED/touchscreen, touchpad traseiro, dois analógicos, Remote Play com PS4, conectividade com PSN</td>
+          <td>PS Vita 1000 (OLED), PS Vita 2000 (LCD, mais leve e fino), modelos Wi-Fi e 3G</td>
+          <td>Persona 4 Golden, Uncharted: Golden Abyss, Gravity Rush</td>
+        </tr>
+
+        <tr>
+          <td>PlayStation 4</td>
+          <td><img src="https://meups.com.br/wp-content/uploads/2021/05/PlayStation-4.jpg.webp"</td>
+          <td> 2013 – 2022 </td>
+          <td>Gráficos em Full HD/4K (PS4 Pro), streaming de jogos, compartilhamento de gameplay, Remote Play, HDR</td>
+          <td>PS4 (modelo original), PS4 Slim, PS4 Pro</td>
+          <td>God of War (2018), The Last of Us Part II, Spider-Man</td>
+        </tr>
+
+        <tr>
+          <td>PlayStation 5</td>
+          <td><img src="https://static.comprexavan.com.br/produto/XJP4XpOi9ZFmFaa08f2s0RMa5iHjTLCBOv0xQ8Bi.png"</td>
+          <td> 2020 – presente </td>
+          <td>SSD ultrarrápido, Ray Tracing, controle com feedback háptico e gatilhos adaptáveis (DualSense), áudio 3D</td>
+          <td>PS5 com disco, PS5 Digital Edition, PS5 Slim (com disco e digital), possíveis revisões internas de hardware</td>
+          <td>Elden Ring, Spider-Man 2, Demon’s Souls Remake</td>
+        </tr>
+        
+      </table>
+    </div>
+    </center>
+
+  <div id="pe">
+    <p style="margin: 1% 0%;">© Projeto JUSON 2025.</p>
+    <hr width="98%">
+    <p style="margin: 1% 0%;">
+      Este site foi desenvolvido com fins educacionais. As marcas, nomes e imagens<br>
+      exibidos pertencem exclusivamente aos seus respectivos proprietários.
+    </p>
+    <p style="margin: 1% 0%;">
+      Desenvolvido por: <strong>Anderson Ribeiro da Silva</strong> e <strong>Juscelino Emanoel Nunes Galvão</strong>.
+    </p>
+    <p style="margin: 1% 0%;">
+      Contato: <a href="https://mail.google.com/mail/?view=cm&to=projetojuson@gmail.com" style="color: white; text-decoration: underline;">projetojuson@gmail.com</a>
+    </p>
+    <img src="https://i.postimg.cc/nhX2Styh/JUSON-BRANCO.png">
+  </div>
+    
+  <script>
+    function voltar() {
+      window.location.href="index.html";
+    }
+  </script>
+
+</body>
+
+</html>

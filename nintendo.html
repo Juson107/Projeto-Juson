@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Nintendo - JUSON</title>
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+    @font-face {
+      font-family: 'Minecraft';
+      src: url('minecraft.ttf') format('truetype');
+    }
+
+    .minecraft-font {
+      font-family: 'Minecraft', monospace;
+    }
+    #main{
+      width: 100%;
+      height: 80px;
+      float: center;
+      background-color: #FF0000;
+      display: flex;
+      justify-content: center; 
+      align-items: center;    
+      gap: 20px;
+       }
+    #texto{
+      text-align: left;
+      margin-left: 20%;
+      margin-right: 20%;
+      font-size: 20px;
+      font-family: 'Minecraft', monospace;
+    }
+
+    #pe{
+      width: 100%;
+      height: 20%;
+      float: left;
+      background-color: #FF0000;
+      color: white;
+      text-align: left;
+      padding-left: 20px;
+      box-sizing: border-box;
+      overflow: hidden;
+      font-family: 'Minecraft', monospace;
+
+      }
+    #pe img{
+      height:auto ;
+      width:15%;
+      float:right;
+      margin: -4% 9% -10% 3%;
+        
+
+      }
+    img:not(#imgs img):not(#tab img):not(#pe img) {
+      display: block;
+      margin: 20px auto;
+      width: 40%;
+      height: auto;
+
+    }
+
+    #imgs{
+      justify-content: center;
+      gap: 10px;
+      display: flex;
+    }
+    #imgs img{
+      height:250px ;
+      width:auto;
+    }
+    
+
+    #tab{
+      height:70% ;
+      width:70%;
+      margin:2% 0% 2% 0% ;
+      font-family: 'Minecraft', monospace;
+    }
+    #tab img {
+      width: 200px;
+      height: auto;
+      object-fit: contain;
+      display: inline;
+      margin: 0;
+    }
+    th{
+      background-color: #FF0000;
+      color: white;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+  
+  <div id="main">
+
+
+    <input style="width: 3.5%;height: auto ;position: absolute;  left: 20px; top: 18px; height: 45px;" type="image" src="https://i.postimg.cc/qqK888gc/CASA-JUSON.png" onclick="voltar()" value="start" title="menu">
+
+    <img style="height: 8vh; width: auto;" src="https://i.postimg.cc/W4XnvhSG/NINTENDO-LOGO-JUSON-removebg-preview.png">
+  </div>
+
+  <div id="texto">
+    <center><h3>A História da Nintendo</h3></center>
+   <p> A Nintendo entrou no mercado de videogames em 1983 com o <b>Famicom</b>, que chegou ao Ocidente como <b>NES</b> em 1985. O console foi essencial para recuperar a indústria dos games após a crise de 1983, padronizou o uso de cartuchos e popularizou o controle com direcional digital.</p>
+    <div id="imgs">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Nintendo-Famicom-Console-Set-FL.jpg/2560px-Nintendo-Famicom-Console-Set-FL.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/NES-Console-Set.png">
+    </div>
+
+    Em 1990, a empresa lançou o <b>Super Nintendo (SNES)</b>, com gráficos e áudio aprimorados. O console elevou o padrão técnico da geração e fortaleceu a marca Nintendo como líder da indústria durante os anos 90.
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/SNES-Mod1-Console-Set.jpg">
+
+    O <b>Nintendo 64</b> chegou em 1996 e foi o primeiro da empresa com gráficos totalmente em 3D. Apesar de ainda usar cartuchos em vez de CDs, se destacou pelo controle analógico e pelas experiências em três dimensões.
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/N64-Console-Set.png">
+    
+    Em 2001, o <b>GameCube</b> foi lançado com mídia óptica própria e um controle confortável. Embora tenha oferecido bom desempenho técnico, teve vendas mais modestas em comparação aos concorrentes da época.
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/GameCube-Console-Set.png">
+    
+    O <b>Wii</b>, lançado em 2006, representou uma grande virada. Com foco em controles por movimento e apelo a todos os públicos, se tornou um sucesso massivo e expandiu o conceito de videogame para além do público tradicional.
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Wii-Console.png">
+    
+    O <b>Wii U</b>, de 2012, tentou continuar a proposta do Wii com um controle em forma de tablet. Apesar de ideias inovadoras, teve vendas fracas e gerou confusão com o público sobre se era um novo console ou apenas um acessório.
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Wii_U_Console_and_Gamepad.png">
+    
+    Em 2017, a Nintendo lançou o <b>Switch</b>, um console híbrido que funciona tanto como portátil quanto de mesa. A proposta foi um grande acerto, unificando as linhas de hardware e alcançando enorme sucesso global.
+    <img src="https://infostore.vtexassets.com/arquivos/ids/231874/2.jpg?v=638880962409330000">
+    
+    O <b>Switch 2</b>, lançado em 2025, é a evolução do conceito híbrido, trazendo melhorias técnicas como maior desempenho gráfico, tela aprimorada e retrocompatibilidade com jogos do Switch original. Ele reforça a estratégia da Nintendo de manter um único sistema unificado para jogos portáteis e de mesa.
+    <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/c_fill,w_1025/dpr_2.0/ccb3e8ca3c296e21a8c933e8369031511589d0ef6b079cf5bb3667b09893482c/features/animation-features-hero/m-features-switch">
+    
+    Nos portáteis, a Nintendo se destacou com o <b>Game Boy</b> (1989), o <b>Nintendo DS</b> (2004) e o <b>3DS</b> (2011), dominando o setor por décadas até fundir sua estratégia no formato híbrido com o Switch.
+    <div id="imgs">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Game-Boy-FL.jpg/960px-Game-Boy-FL.jpg">     <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Nintendo_DS_Trans.png">     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nintendo-3DS-AquaOpen.png/1200px-Nintendo-3DS-AquaOpen.png">
+    </div>
+
+
+  </div>
+
+  <hr width="70%px">
+
+  <center>
+    <div id="tab">
+      <table border="1">
+        <tr>
+          <th>NOME</th>
+          <th>IMAGEM</th>
+          <th>ANO</th>
+          <th>INOVAÇÕES</th>
+          <th>VERSÕES</th>
+          <th>JOGOS PRINCIPAIS</th>
+        </tr>
+
+        <tr>
+          <td>Nintendo NES</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/NES-Console-Set.png"></td>
+          <td>1983 – 2003</td>
+          <td>Revitalizou a indústria após o crash de 1983, introduziu o uso de cartuchos intercambiáveis e franquias como Mario e Zelda.</td>
+          <td>NES original, NES Top Loader</td>
+          <td>Super Mario Bros., The Legend of Zelda, Metroid</td>
+        </tr>
+
+        <tr>
+          <td>Super Nintendo (SNES)</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/SNES-Mod1-Console-Set.jpg"></td>
+          <td>1990 – 2003</td>
+          <td>Gráficos de 16 bits, chip Super FX para gráficos avançados, trilha sonora de alta qualidade.</td>
+          <td>SNES original, SNES Mini, SNES Classic Edition</td>
+          <td>Super Mario World, Donkey Kong Country, Chrono Trigger</td>
+        </tr>
+
+        <tr>
+          <td>Nintendo Wii</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Wii-Console.png"></td>
+          <td>2006 – 2017</td>
+          <td>Controles por movimento (Wii Remote), foco em acessibilidade e público casual, grande sucesso comercial.</td>
+          <td>Wii original, Wii Family Edition, Wii Mini</td>
+          <td>Wii Sports, The Legend of Zelda: Twilight Princess, Super Mario Galaxy</td>
+        </tr>
+
+        <tr>
+          <td>Nintendo Switch</td>
+          <td><img src="https://infostore.vtexassets.com/arquivos/ids/231874/2.jpg?v=638880962409330000g"></td>
+          <td>2017 – presente</td>
+          <td>Console híbrido (portátil e de mesa), Joy-Cons destacáveis, compatibilidade com mídia física e digital.</td>
+          <td>Switch original, Switch Lite, Switch OLED</td>
+          <td>The Legend of Zelda: Breath of the Wild, Mario Kart 8 Deluxe, Animal Crossing: New Horizons</td>
+        </tr>
+
+        <tr>
+          <td>Nintendo Switch 2</td>
+          <td><img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/c_fill,w_1025/dpr_2.0/ccb3e8ca3c296e21a8c933e8369031511589d0ef6b079cf5bb3667b09893482c/features/animation-features-hero/m-features-switch"></td>
+          <td> 2025 - presente </td>
+          <td>Gráficos aprimorados com resolução 4K na TV e suporte para HDR e 120 quadros por segundo na tela portátil, além de um armazenamento interno maior e funcionalidades de áudio aprimoradas. Os controles Joy-Con foram atualizados com encaixe magnético, botão dedicado ao chat de voz e a opção de usar um dos controles como mouse em jogos compatíveis. </td>
+          <td>Switch 2 original</td>
+          <td>Mario Kart World e Donkey Kong Bananza)</td>
+        </tr>
+
+      </table>
+    </div>
+  </center>
+
+
+  <div id="pe">
+    <p style="margin: 1% 0%;">© Projeto JUSON 2025.</p>
+    <hr width="98%">
+    <p style="margin: 1% 0%;">
+      Este site foi desenvolvido com fins educacionais. As marcas, nomes e imagens<br>
+      exibidos pertencem exclusivamente aos seus respectivos proprietários.
+    </p>
+    <p style="margin: 1% 0%;">
+      Desenvolvido por: <strong>Anderson Ribeiro da Silva</strong> e <strong>Juscelino Emanoel Nunes Galvão</strong>.
+    </p>
+    <p style="margin: 1% 0%;">
+      Contato: <a href="https://mail.google.com/mail/?view=cm&to=projetojuson@gmail.com" style="color: white; text-decoration: underline;">projetojuson@gmail.com</a>
+       <img src="https://i.postimg.cc/nhX2Styh/JUSON-BRANCO.png">
+    </p>
+  </div>
+
+  <script>
+    function voltar() {
+      window.location.href="index.html";
+    }
+  </script>
+
+</body>
+
+</html>
