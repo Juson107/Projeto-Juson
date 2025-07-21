@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Início - JUSON</title>
+  
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+    @font-face {
+      font-family: 'Minecraft';
+      src: url('minecraft.ttf') format('truetype');
+    }
+
+    .minecraft-font {
+      font-family: 'Minecraft', monospace;
+    }
+    #main{
+      width: 85%;
+      height: 100vh;
+      float: right;
+      background-color: #d3d3d3;
+    }
+    #esq {
+      width: 15%;
+      height: 100vh;
+      float: left;
+      background-color: gray;
+    }
+
+    #esq input {
+      width: 100%;
+      height: 25vh;
+      object-fit: cover;
+      display: block; 
+      padding: 0;           
+      margin: 0;    
+      border: none;
+    }
+
+    #botao{
+      width: 25% ;
+      height: auto ;
+    }
+   
+    #pe{
+      width: 100%;
+      height: 20%;
+      float: left;
+      background-color: black;
+      color: white;
+      text-align: left;
+      padding-left: 20px;
+      box-sizing: border-box;
+      overflow: hidden;
+      font-family: 'Minecraft', monospace;
+
+      }
+      #pe img{
+        height:auto ;
+        width:15%;
+        float:right;
+        margin: -4% 9% -10% 3%;
+
+      }
+  
+
+  </style>
+  
+</head>
+
+<body>
+ 
+  <div id="main">
+    <center>
+      <h1><p class="minecraft-font" style="font-size: 120px;"> A História dos Consoles</p></h1>
+    </center>
+
+       <div style="display: flex; justify-content: center; gap: 40px; margin-top: 30px;">
+         <input id="botao" type="image" src="https://i.postimg.cc/hjSKT2dB/START-JUSON-novo.png" onclick="start()" value="start" title="Start" style="width: auto; height: 15vh;">
+
+         <input type="image" src="https://i.postimg.cc/26mSTzgg/QUIZ-JUSON-removebg-preview-1.png" title="Quiz" onclick="quiz()" style="width: auto; height: 15vh">
+      </div>
+    </div>
+  
+  
+  <div id="esq">
+         <input type="image" src="https://i.postimg.cc/MGVyg0zn/PLAYSTATION-JUSON.jpg" title="PlayStation" onclick="PlayStation()">
+
+        <input type="image" src="https://i.postimg.cc/7Z64BXMN/XBOX-JUSON.webp" title="Xbox" onclick="Xbox()">
+
+
+        <input type="image" src="https://i.postimg.cc/YSC3Vndb/NINTENDO-JUSON.jpg" title="Nintendo" onclick="Nintendo()" >
+
+
+        <input type="image" src="https://i.postimg.cc/qMpCjtbG/OUTROS-JUSON.png" title="Outros" onclick="outros()" >
+  
+      <br>
+  </div>
+
+
+  
+  <div id="pe">
+    <p style="margin: 1% 0%;">© Projeto JUSON 2025.</p>
+    <hr width="98%">
+    <p style="margin: 1% 0%;">
+      Este site foi desenvolvido com fins educacionais. As marcas, nomes e imagens<br>
+      exibidos pertencem exclusivamente aos seus respectivos proprietários.
+    </p>
+    <p style="margin: 1% 0%;">
+      Desenvolvido por: <strong>Anderson Ribeiro da Silva</strong> e <strong>Juscelino Emanoel Nunes Galvão</strong>.
+    </p>
+    <p style="margin: 1% 0%;">
+      Contato: <a href="https://mail.google.com/mail/?view=cm&to=projetojuson@gmail.com" style="color: white; text-decoration: underline;">projetojuson@gmail.com</a>
+       <img src="https://i.postimg.cc/nhX2Styh/JUSON-BRANCO.png">
+    </p>
+  </div>
+
+  <script>
+    function start() {
+      window.location.href="historia.html";
+    }
+    
+    function PlayStation() {
+      window.location.href="playstation.html";
+    }
+    function Xbox() {
+      window.location.href="xbox.html";
+    }
+    function Nintendo() {
+      window.location.href="nintendo.html";
+    }
+    function outros() {
+      window.location.href="outros.html";
+    }
+    function quiz() {
+      window.location.href="index2.html";
+    }
+
+  </script>
+
+</body>
+
+</html>
